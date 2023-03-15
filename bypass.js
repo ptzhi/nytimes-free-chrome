@@ -1,8 +1,10 @@
 // allows scrolling
 const article = document.querySelector('div.css-mcm29f');
+const main = document.querySelector('main');
 
-if (article) {
+if (article || main) {
   article.style.position = 'relative';
+  main.style.position = 'relative';
 }
 
 // removes paywall
@@ -18,6 +20,3 @@ const paywall_gradient = document.querySelector('div.css-gx5sib');
 if (paywall_gradient) {
   paywall_gradient.remove();
 }
-
-
-
