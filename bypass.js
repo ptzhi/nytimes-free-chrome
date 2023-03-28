@@ -7,16 +7,13 @@ if (article || main) {
   main.style.position = 'relative';
 }
 
-// removes paywall
-const paywall = document.querySelector('div.css-5x99bu');
-
-if (paywall) {
-  paywall.remove();
-}
-
-// removes paywall gradient
+// removes paywall + gradient
+const paywall = document.getElementById("gateway-content");
+// possible other articles have diff classes, continue random sampling
 const paywall_gradient = document.querySelector('div.css-gx5sib');
 
-if (paywall_gradient) {
+if (paywall || paywall_gradient) {
+  paywall.remove();
   paywall_gradient.remove();
+
 }
