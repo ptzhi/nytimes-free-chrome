@@ -1,8 +1,12 @@
 # Read NYTimes for Free
 
-NYTimes implemented such a lazy paywall I couldn't help myself.
-
 ### Instructions
 1. Download or clone repo
 2. Unzip and load unpacked folder into Google extensions
-3. Click extension icon on a paywalled NYTimes article to read for free
+
+Problems to address:
+- some images don't load because we freeze the content too early
+
+Changelog
+- v1.1: overhaul, inject script prior to DOM load
+- v1.0: click extension per article
